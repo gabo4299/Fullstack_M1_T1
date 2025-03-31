@@ -1,0 +1,45 @@
+/** HEADER **/
+    #header-nav {  /* referencia a id header nav*/
+    background-color: #f6b319; /* se establece el color como fondo*/
+    border-radius: 0;  /* sin redondiado*/
+    border: 0;
+    }
+    #logo-img { /* referencia a id logo-img*/
+    background: url('../images/restaurant-logo_large.png') no-repeat; /* el fondo es la imagen logo large*/
+    width: 150px; height: 150px; /*Establece un tamaño te 150 x 150 px*/
+    margin: 10px 15px 10px 0; /* un margen de bot  izquierda derecha top */
+    }
+    .navbar-brand { /* referencia a clase navbar-brand*/
+    padding-top: 25px; /*margen de 25 pixeles desde top*/
+    }
+
+
+    .navbar-brand h1 { /* referencia a todos los h1 de la clase navbar-brand*/
+        /* Restaurant name */
+    font-family: 'Lora', serif; /* Utilza el font lora*/
+    color: #557c3e; /* color de texto */
+    font-size: 1.5em;/* tamaño de texto */
+    text-transform: uppercase; /*convertir a mayusculas*/
+    font-weight: bold; /*Negrita*/
+    text-shadow: 1px 1px 1px #222; /*sombra de texto x,y, redondeo blur, color  */
+    margin-top: 0; /* 0 de margen en top y botton*/
+    margin-bottom: 0;
+    line-height: .75; /* distancia entre lineas de texto*/
+    }
+
+    .navbar-brand a:hover, .navbar-brand a:focus { /*referencia a  la etiqueta a de la clase navbar-brnad solo cuadno se pasa el mouse o se selecciona con tabulador o de alguna manera */
+    text-decoration: none; /*sin decoracion*/
+    }
+    
+
+    .navbar-brand p {  /*referencia a las etiquetas p de la clase navbar-brand*/ 
+        /* Kosher cert */
+    color: #000; /*color de texto negro*/
+    text-transform: uppercase; font-size: .7em; /*texto a mayusculas y tamaño de texto*/
+    margin-top: 15px; /*margen de 15 px */
+    }
+    .navbar-brand p span {/*referecia a las etiquetas span dentro de una etiqueta p en la clase navbar-brand*/ 
+        /* Star-K */ 
+        vertical-align: middle; /*se alinea verticalmente */
+    }
+        
