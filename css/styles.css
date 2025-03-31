@@ -148,6 +148,23 @@
 /* END HOME PAGE */
             
 
+
+/* Footer */
+/* se alinea el texto al centro y se da unmargen de 30 px  */
+.panel-footer section { 
+    margin-bottom: 30px; text-align: center;
+}
+/* margin already exists on the whole row */
+.panel-footer section:nth-child(3) {
+margin-bottom: 0; 
+}
+/* ancho de 50% */
+.panel-footer section hr {
+width: 50%;
+}
+/* End Footer */
+
+
     /********** Large devices only **********/
 /* para las pantallas grandes mayores de 1200 px, en la clse jumbotron dentro de container se establece
 un fondo de imagen de alto 675 */
