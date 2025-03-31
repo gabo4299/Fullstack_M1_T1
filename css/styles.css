@@ -43,3 +43,61 @@
         vertical-align: middle; /*se alinea verticalmente */
     }
         
+    /** todas las #nav-list afectan al id nav-list 
+        con un margen superior de 10 px 
+        en la etiqueta a dentro de navlist el color es rojo y centrado y cuando se pasa por 
+        encima el cursor el background cambia blanco el tamaño dentro span dentro de a en la nav-list
+        es de 1.8**/
+    #nav-list {
+    margin-top: 10px;
+    }
+    #nav-list a {
+     color: #951C49;
+    text-align: center;
+    }
+    #nav-list a:hover { 
+        background: #E7E7E7;
+    }
+    #nav-list a span { 
+        font-size: 1.8em;
+    }
+
+    /** todas las #phone afectan al id phone
+        con un margen superior de 5px 
+        la etiqueta a se alinea  a la derecha y sin separacion co nel borde inferior 
+        el texto en div dentro de phone es de color verde se alinea a la derecha 
+        y tiene un espacio de 15 px respecto a la derecha **/
+
+    #phone {
+        margin-top: 5px;
+    }
+
+    #phone a { /*phone number*/
+        text-align:  right;
+        padding-bottom: 0;
+    }
+
+    #phone div { 
+        /* We Deliver */
+         color: #557c3e;
+        text-align: right; padding-right: 15px;
+        }
+
+
+    /** afectan al boton con clase navbar-toggle dentro de la clase navbar-header
+    tambien la la clase icon-bar dentro de navbar-header
+    con un borde de 1px de color guindo, tambien se 
+    establece un margen superior de  - 30px para alinear para que la barra de navegación 
+    no baje hasta la estrella de kosher, así como también el clear especifica
+     si un elemento puede estar al lado de elementos flotantes , 
+     both indica que el elemento es movido hacia abajo para limpiar
+     elementos flotantes para alinear  
+      el boton de navegación con el nombre de la chifa**/
+    .navbar-header button.navbar-toggle, .navbar-header
+    .icon-bar {
+        border: 1px solid #61122f;
+        }
+    .navbar-header button.navbar-toggle {
+        clear: both;
+        margin-top: -30px;
+    }
