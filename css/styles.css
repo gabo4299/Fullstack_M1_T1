@@ -248,8 +248,29 @@ y margenes inferior  izquierdo y derecho de 5 px*/
         margin-top: 30px;
          padding: 0;
     }
+    /* el ancho se reduce a 360px y un margen de inferior 0 izquierdo auto y derecho 15px */
+    #menu-tile, #specials-tile { width: 360px;
+        margin: 0 auto 15px;
+        }
     /* End Home Page */
 
     }
 
 
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
+@media (max-width: 479px) {
+/* Header */
+/* reduce aun mas el ancho en el menu y specials a 280 px 
+y se da un esapciado de 5px y un tamaño de letra de  6% el ancho */
+.navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+    }
+    /* End Header */
+    /* Home page */
+    #menu-tile, #specials-tile {
+    width: 280px; margin: 0 auto 15px;
+    }
+    }
+    
