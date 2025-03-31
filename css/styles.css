@@ -101,3 +101,81 @@
         clear: both;
         margin-top: -30px;
     }
+
+
+
+
+    /********** Large devices only **********/
+@media (min-width: 1200px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+/* Header */
+/* para dispositivos entre 992 y 1199 el background es de la imagen con medidas de 100 x 100 px '
+y margenes inferior  izquierdo y derecho de 5 px*/
+#logo-img {
+background: url('../images/restaurant-logo_medium.png') no-repeat; width: 100px;
+height: 100px; margin: 5px 5px 5px 0;
+}
+/* End Header */
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+
+
+/********** Extra small devices only **********/ 
+/** En dispositivos con tamaño menor a 767 la barra de navegacion 
+    tiene un espaciado de 10 px superior y un alto de 80
+    el H1 tiene un espaciado de 10px y un tamaño de 5% del ancho de vista
+    el texto en p es de 6 u tiene un margen superior de 12
+    el ancho de la imagen dentro de p en la navbar  es de 20 px de alto **/
+@media (max-width: 767px) {
+    /* Header */
+    .navbar-brand { 
+        padding-top: 10px; height: 80px;
+    }
+    .navbar-brand h1 { /* Restaurant name */
+        padding-top: 10px;
+        font-size: 5vw; /* 1vw = 1% of viewport width */
+    }
+    .navbar-brand p { /* Kosher cert */
+        font-size: .6em; margin-top: 12px;
+    }
+    .navbar-brand p img { /* Star-K */ 
+        height: 20px;
+    }
+    #collapsable-nav a { 
+        /* Collapsed nav menu text tamaño de letra 1.2 
+        en la etiqueta a dentro del id collapsable nab */
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span { 
+        /* Collapsed nav menu glyph
+        tamaño de letra de 1 en el texto de span, dentro de a en el id collapsable nav 
+        y un margen derecho de 5px */ 
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    #call-btn > a { 
+        /* a las eitquetas a hijos direcots del id call-btn
+        letra 1.5, se bloquea el display, margen izquierdo de 20 espaciado de 10 
+        borde de 2px de color blanco, fondo amarillo y color de texto rojo */
+
+        font-size: 1.5em; display: block; margin: 0 20px; padding: 10px;
+        border: 2px solid #fff; background-color: #f6b319; color: #951c49;
+    }
+    #xs-deliver {
+        /* id xs-deliver
+          margen 5px superior 
+          tamañó de letra .7 espaciado de letra .1em todo en mayuscula */
+         margin-top: 5px; font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+    /* End Header */
+
+    }
