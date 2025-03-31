@@ -106,35 +106,55 @@
 
 
     /********** Large devices only **********/
+/* para las pantallas grandes mayores de 1200 px, en la clse jumbotron dentro de container se establece
+un fondo de imagen de alto 675 */
 @media (min-width: 1200px) {
+    .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat; height: 675px;
+    }
 }
-
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 /* Header */
 /* para dispositivos entre 992 y 1199 el background es de la imagen con medidas de 100 x 100 px '
 y margenes inferior  izquierdo y derecho de 5 px*/
-#logo-img {
-background: url('../images/restaurant-logo_medium.png') no-repeat; width: 100px;
-height: 100px; margin: 5px 5px 5px 0;
-}
+    #logo-img {
+        background: url('../images/restaurant-logo_medium.png') no-repeat; width: 100px;
+        height: 100px; margin: 5px 5px 5px 0;
+    }
 /* End Header */
+
+/* Home Page */
+/* para la clase jumbotro ndentro de container se agrega la imagen como fondo con un alto de 
+558 px */
+    .container .jumbotron {
+        background: url('../images/jumbotron_992.jpg') no-repeat; height: 558px;
+    }
+    /* End Home Page */
 }
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+    /* para la clase jumbotron
+    dentro de container se agrega la imagen como fondo con un alto de 
+    432 px */
+    /* Home Page */
+    .container .jumbotron {
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+    }
+    /* End Home Page */
+    
 }
 
-
-
-
 /********** Extra small devices only **********/ 
-/** En dispositivos con tamaño menor a 767 la barra de navegacion 
+
+@media (max-width: 767px) {
+    /* Header */
+    /** En dispositivos con tamaño menor a 767 la barra de navegacion 
     tiene un espaciado de 10 px superior y un alto de 80
     el H1 tiene un espaciado de 10px y un tamaño de 5% del ancho de vista
     el texto en p es de 6 u tiene un margen superior de 12
     el ancho de la imagen dentro de p en la navbar  es de 20 px de alto **/
-@media (max-width: 767px) {
-    /* Header */
     .navbar-brand { 
         padding-top: 10px; height: 80px;
     }
@@ -178,4 +198,15 @@ height: 100px; margin: 5px 5px 5px 0;
     }
     /* End Header */
 
+
+        /* Home Page */
+        /* en el jumbotron hay un margen de 30 y 0 espaciado */
+    .container .jumbotron { 
+        margin-top: 30px;
+         padding: 0;
     }
+    /* End Home Page */
+
+    }
+
+
