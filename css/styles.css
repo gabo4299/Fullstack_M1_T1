@@ -105,6 +105,49 @@
 
 
 
+
+/* HOME PAGE */
+/* agrega un sombreado y borde guindo al jumbotron */
+.container .jumbotron {
+    box-shadow: 0 0 50px #3F0C1F; border: 2px solid #3F0C1F;
+    }
+    
+    /* para menu specials y map se cambia la posicion a relativo, 
+    se establece un tamaño de 250px x 100% un margen inferior para cada uno de 15
+    un bordeado de 2px guindo */
+    #menu-tile, #specials-tile, #map-tile {
+    height: 250px; 
+    width: 100%;
+    margin-bottom: 15px; position: relative; border: 2px solid #3F0C1F;
+    overflow: hidden;
+    }
+    /* cuando se pasa el mouse por encima se genera una sombra */
+    #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+    }
+    /* agrega fondos para menu y specials */
+    #menu-tile {
+        background: url('../images/menu-tile.jpg') no-repeat;
+        background-position: center;
+    }
+    #specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+    }
+        
+    /* Genera el recuadro negro para las nombres de cada mosaico */
+    #menu-tile span, #specials-tile span, #map-tile span {
+         position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        text-align: center; font-size: 1.6em;
+        text-transform: uppercase; background-color: #000; color: #fff;
+        opacity: .8;
+    }
+/* END HOME PAGE */
+            
+
     /********** Large devices only **********/
 /* para las pantallas grandes mayores de 1200 px, en la clse jumbotron dentro de container se establece
 un fondo de imagen de alto 675 */
